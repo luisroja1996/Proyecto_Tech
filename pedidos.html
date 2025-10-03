@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wicho's</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-4" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">WICHO'S</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav w-50">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pedidos.html">Pedido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="icono"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                            class="bi bi-back" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2zm2-1a1 
+  1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+</svg></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+   </header>
+   
+<main class="py-5">
+
+    <div class="container">
+       
+        <div class="border border-5 radius- border-dark p-3 mb-5">
+            <div class="col text-center">
+                <h1 class="display-4">Menú</h1>
+            </div>
+        </div>
+
+        <div class="border border-5 rounded border-dark p-4">
+            <ul class="nav nav-pills justify-content-center mb-3 " id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" 
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Hamburguesas</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" 
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Perros Calientes</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" 
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Arepas</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" 
+                tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="imgped/hamburger/ham_cla.png" class="card-img-top" alt="Hamburguesa Clásica">
+                                <div class="card-body">                                            
+                                    <h5 class="card-title">Hamburguesa Clásica</h5>
+                                    <p class="card-text">Deliciosa hamburguesa con carne 100% de res, queso y vegetales 
+                                        frescos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa2.jpg" class="card-img-top" alt="Hamburguesa BBQ">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa BBQ</h5>
+                                    <p class="card-text">Con salsa barbacoa, tocineta crujiente y queso cheddar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa3.jpg" class="card-img-top" alt="Hamburguesa Doble">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa Doble</h5>
+                                    <p class="card-text">Doble carne, doble queso y todo el sabor de Wicho’s.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa4.jpg" class="card-img-top" alt="Hamburguesa Vegetariana">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa Vegetariana</h5>
+                                    <p class="card-text">Con garbanzos, vegetales frescos y salsa especial.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row row-cols-1 row-cols-md-2 g-4 mt-0">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa1.jpg" class="card-img-top" alt="Hamburguesa Clásica">
+                                <div class="card-body">                                            
+                                    <h5 class="card-title">Hamburguesa Clásica</h5>
+                                    <p class="card-text">Deliciosa hamburguesa con carne 100% de res, queso y vegetales 
+                                        frescos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa2.jpg" class="card-img-top" alt="Hamburguesa BBQ">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa BBQ</h5>
+                                    <p class="card-text">Con salsa barbacoa, tocineta crujiente y queso cheddar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa3.jpg" class="card-img-top" alt="Hamburguesa Doble">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa Doble</h5>
+                                    <p class="card-text">Doble carne, doble queso y todo el sabor de Wicho’s.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa4.jpg" class="card-img-top" alt="Hamburguesa Vegetariana">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa Vegetariana</h5>
+                                    <p class="card-text">Con garbanzos, vegetales frescos y salsa especial.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" 
+                tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/perro1.jpg" class="card-img-top" alt="Perro Sencillo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Perro Sencillo</h5>
+                                    <p class="card-text">Pan suave, salchicha y salsa especial.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/perro2.jpg" class="card-img-top" alt="Perro con Queso">
+                                <div class="card-body">
+                                    <h5 class="card-title">Perro con Queso</h5>
+                                    <p class="card-text">Clásico con queso fundido y tocineta.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/perro3.jpg" class="card-img-top" alt="Perro Mexicano">
+                                <div class="card-body">
+                                    <h5 class="card-title">Perro Mexicano</h5>
+                                    <p class="card-text">Con guacamole, jalapeños y salsa picante.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/perro4.jpg" class="card-img-top" alt="Perro Especial">
+                                <div class="card-body">
+                                    <h5 class="card-title">Perro Especial</h5>
+                                    <p class="card-text">Doble salchicha, queso, tocineta y salsas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-2 g-4 mt-0">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa1.jpg" class="card-img-top" alt="perro">
+                                <div class="card-body">                                            
+                                    <h5 class="card-title">Perro Clásica</h5>
+                                    <p class="card-text">Deliciosa hamburguesa con carne 100% de res, queso y vegetales 
+                                        frescos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa2.jpg" class="card-img-top" alt="Perro BBQ">
+                                <div class="card-body">
+                                    <h5 class="card-title">Perro BBQ</h5>
+                                    <p class="card-text">Con salsa barbacoa, tocineta crujiente y queso cheddar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa3.jpg" class="card-img-top" alt="Perro Doble">
+                                <div class="card-body">
+                                    <h5 class="card-title">Perro Doble</h5>
+                                    <p class="card-text">Doble carne, doble queso y todo el sabor de Wicho’s.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa4.jpg" class="card-img-top" alt="Perro Vegetariana">
+                                <div class="card-body">
+                                    <h5 class="card-title">Perro Vegetariana</h5>
+                                    <p class="card-text">Con garbanzos, vegetales frescos y salsa especial.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" 
+                tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/perro1.jpg" class="card-img-top" alt="Arepa Sencillo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arepa Sencillo</h5>
+                                    <p class="card-text">Pan suave, salchicha y salsa especial.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/perro2.jpg" class="card-img-top" alt="Arepa">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arepa con Queso</h5>
+                                    <p class="card-text">Clásico con queso fundido y tocineta.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/perro3.jpg" class="card-img-top" alt="Arepa Mexicano">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arepa Mexicano</h5>
+                                    <p class="card-text">Con guacamole, jalapeños y salsa picante.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/perro4.jpg" class="card-img-top" alt="Arepa Especial">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arepa Especial</h5>
+                                    <p class="card-text">Doble salchicha, queso, tocineta y salsas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-2 g-4 mt-0">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa1.jpg" class="card-img-top" alt="AREPA Clásica">
+                                <div class="card-body">                                            
+                                    <h5 class="card-title">arepa Clásica</h5>
+                                    <p class="card-text">Deliciosa hamburguesa con carne 100% de res, queso y vegetales frescos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa2.jpg" class="card-img-top" alt="arepa BBQ">
+                                <div class="card-body">
+                                    <h5 class="card-title">arepa BBQ</h5>
+                                    <p class="card-text">Con salsa barbacoa, tocineta crujiente y queso cheddar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa3.jpg" class="card-img-top" alt="arepa Doble">
+                                <div class="card-body">
+                                    <h5 class="card-title">arepa Doble</h5>
+                                    <p class="card-text">Doble carne, doble queso y todo el sabor de Wicho’s.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hamburguesa4.jpg" class="card-img-top" alt="arepa Vegetariana">
+                                <div class="card-body">
+                                    <h5 class="card-title">arepa Vegetariana</h5>
+                                    <p class="card-text">Con garbanzos, vegetales frescos y salsa especial.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+
+
+
+
+</main>
+<footer class="text-bg-dark text-center p-5">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h5>Nuestra Ubicación</h5>
+                San Alonso
+            </div><br>
+            <div class="col">
+                <h5>Redes Sociales</h5>
+                Facebook
+            </div><br>
+            <div class="col">
+                <h5>Horarios de atención</h5>
+                Lunes a sábado: <br>
+                05:00 pm - 10:00 pm <br> <br>
+                domingos y festivos: <br>
+                04:00 pm - 08:00 pm
+            </div><br>
+        </div>
+    </div><br>
+<h6>Copyright © 2025 Wicho's</h6>
+</footer>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+crossorigin="anonymous"></script>
+    
+</body>
+</html>
