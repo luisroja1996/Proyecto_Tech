@@ -34,17 +34,17 @@ main{
 }
 
 .navbar-nav .nav-link.active {
-  color: #ffc107 !important;             
+  color: #ffc107 !important;
   border-bottom: 3px solid #ffc107;      
-  font-weight: bold;                     
+  font-weight: bold;
 }
 
-.nav-link.botonMenu.active{
-    background-color: #343a40 !important;
-    color: white !important;
-    border-radius: 6px;
-    font-weight: bold;
-    padding: 6px 12px;
+.nav-link.botonMenu.active{ 
+  background-color: #343a40 !important; 
+  color: white !important; 
+  border-radius: 6px; 
+  font-weight: bold; 
+  padding: 6px 12px; 
 }
 
 .navbar-nav{
