@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Wicho's</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
     crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-4" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">WICHO'S</a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-cart-fill"></i> Carrito de Compras
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav w-50">
                         <li class="nav-item">
+
                             <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
                         </li>   
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="pedidos.html">Menú</a>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="pedidos.html">Pedido</a>
+                            <a class="nav-link" aria-current="page" href="pedidos.html">Pedido</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contacto</a>
                         </li>
-                        <li class="icono"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
-                            class="bi bi-back" viewBox="0 0 16 16">
-  <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2zm2-1a1 
-  1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
-</svg></li>
                     </ul>
+                </div>
+
+                <div class="d-flex">                   
+                    <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target=
+                        "#carritoOffcanvas">
+                        <i class="bi bi-cart-fill"></i> Carrito de Compras
+                        <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">3</span>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -52,25 +65,31 @@
        
         <div class="border border-5 radius- border-dark p-3 mb-5">
             <div class="col text-center">
-                <h1 class="display-4">Menú</h1>
+                <h1 class="display-4 fw-bold">Menú</h1>
             </div>
         </div>
 
         <div class="border border-5 rounded border-dark p-4">
             <ul class="nav nav-pills justify-content-center mb-3 " id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" 
-                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Hamburguesas</button>
+                    <button class="nav-link active botonMenu" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" 
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <strong style="font-size: 1.2rem;">Hamburguesas</strong>
+                    </button>
                 </li>
 
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" 
-                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Perros Calientes</button>
+                    <button class="nav-link botonMenu" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" 
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        <strong style="font-size: 1.2rem;">Perros Calientes</strong>
+                    </button>
                 </li>
 
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" 
-                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Arepas</button>
+                    <button class="nav-link botonMenu" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" 
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                        <strong style="font-size: 1.2rem;">Arepas</strong>
+                    </button>
                 </li>
             </ul>
 
@@ -80,41 +99,80 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="imgped/hamburger/ham_cla.png" class="card-img-top" alt="Hamburguesa Clásica">
-                                <div class="card-body">                                            
-                                    <h5 class="card-title">Hamburguesa Clásica</h5>
-                                    <p class="card-text">Deliciosa hamburguesa con carne 100% de res, queso y vegetales 
-                                        frescos.</p>
+                                <img src="imgped/hamburger/ham_laRebelde.png" class="card-img-top imagen_fija" alt="ham_laRebelde">
+                                <div class="card-body text-center">                                            
+                                    <h5 class="card-title fw-bold text-dark">Hamburguesa La Rebelde</h5>
+                                    <p class="card-text">Una hamburguesa con personalidad: carne jugosa de res, queso 
+                                        cheddar derretido, crocante de cebolla, pepinillos y lechuga fresca en pan brioche
+                                         dorado. Servida con papas fritas,  una combinación perfecta entre suavidad, sabor
+                                          ahumado y un toque crujiente.
+                                    </p>
+                                    <h4 class="text-danger fw-bold">$24.000</h4>
+                                    <button class="btn btn-dark"
+                                            data-name="Hamburguesa La Rebelde"
+                                            data-price="24000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
+                                    
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa2.jpg" class="card-img-top" alt="Hamburguesa BBQ">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa BBQ</h5>
-                                    <p class="card-text">Con salsa barbacoa, tocineta crujiente y queso cheddar.</p>
+                                <img src="imgped/hamburger/ham_laExplosiva.png" class="card-img-top imagen_fija" alt="ham_laExplosiva">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Hamburguesa La Explosiva</h5>
+                                    <p class="card-text">La reina de la intensidad: carne jugosa de res, doble pollo 
+                                        crujiente, doble queso derretido y un estallido de salsas que se mezclan con 
+                                        vegetales frescos en un pan brioche con ajonjolí. Servida con papas fritas, es una 
+                                        bomba de sabor.</p><br>
+                                    <h4 class="text-danger fw-bold">$28.000</h4>
+                                    <button class="btn btn-dark"
+                                            data-name="Hamburguesa La Explosiva"
+                                            data-price="28000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa3.jpg" class="card-img-top" alt="Hamburguesa Doble">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa Doble</h5>
-                                    <p class="card-text">Doble carne, doble queso y todo el sabor de Wicho’s.</p>
+                                <img src="imgped/hamburger/ham_laCrispy.png" class="card-img-top imagen_fija" alt="ham_laCrispy">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Hamburguesa La Crispy</h5>
+                                    <p class="card-text">El sabor único del pollo crujiente se roba el show: capas de pollo
+                                         empanizado dorado, queso cheddar fundido, vegetales frescos y salsas irresistibles
+                                         , todo dentro de un pan ajonjolí suave. Acompañada de papas fritas, una 
+                                         combinación perfecta de frescura.
+                                    </p>
+                                    <h4 class="text-danger fw-bold">$20.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Hamburguesa La Crispy"
+                                            data-price="20000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa4.jpg" class="card-img-top" alt="Hamburguesa Vegetariana">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa Vegetariana</h5>
-                                    <p class="card-text">Con garbanzos, vegetales frescos y salsa especial.</p>
+                                <img src="imgped/hamburger/ham_laRustica.png" class="card-img-top imagen_fija" alt="ham_laRustica">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Hamburguesa La Rustica</h5>
+                                    <p class="card-text">Un viaje al sabor ahumado: carne jugosa a la parrilla con salsa BBQ, 
+                                        tocineta crujiente y cebolla caramelizada sobre una cama de verdes frescos, en pan 
+                                        brioche con ajonjolí. Acompañada de papas fritas, es una hamburguesa rústica, potente
+                                         y llena de carácter.
+                                    </p>
+                                    <h4 class="text-danger fw-bold">$26.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Hamburguesa La Rustica"
+                                            data-price="26000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -123,41 +181,78 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4 mt-0">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa1.jpg" class="card-img-top" alt="Hamburguesa Clásica">
-                                <div class="card-body">                                            
-                                    <h5 class="card-title">Hamburguesa Clásica</h5>
-                                    <p class="card-text">Deliciosa hamburguesa con carne 100% de res, queso y vegetales 
-                                        frescos.</p>
+                                <img src="imgped/hamburger/ham_intensa.png" class="card-img-top imagen_fija" alt="ham_intensa">
+                                <div class="card-body text-center">                                            
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Hamburguesa Intensidad</h5>
+                                    <p class="card-text">Una hamburguesa diseñada para los que no se conforman con poco. 
+                                        Dos carnes jugosas de res, doble queso cheddar, jamón ahumado y vegetales frescos 
+                                        en pan brioche con ajonjolí. Servida con papas fritas para un combo explosivo de 
+                                        sabor y abundancia.
+                                    </p>
+                                    <h4 class="text-danger fw-bold">$28.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Hamburguesa Intensidad"
+                                            data-price="28000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa2.jpg" class="card-img-top" alt="Hamburguesa BBQ">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa BBQ</h5>
-                                    <p class="card-text">Con salsa barbacoa, tocineta crujiente y queso cheddar.</p>
+                                <img src="imgped/hamburger/ham_laClasica.png" class="card-img-top imagen_fija" alt="ham_laClasica">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Hamburguesa La Clasica</h5>
+                                    <p class="card-text">La hamburguesa de siempre, con el sabor que nunca pasa de moda: 
+                                        carne jugosa de res, queso derretido y vegetales frescos en pan con ajonjolí. 
+                                        Acompañada con papas fritas para disfrutar de un clásico irresistible.
+                                    </p><br>
+                                    <h4 class="text-danger fw-bold">$18.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Hamburguesa La Clasica"
+                                            data-price="18000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa3.jpg" class="card-img-top" alt="Hamburguesa Doble">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa Doble</h5>
-                                    <p class="card-text">Doble carne, doble queso y todo el sabor de Wicho’s.</p>
+                                <img src="imgped/hamburger/comb_parse.png" class="card-img-top imagen_fija" alt="comb_parse">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Combo Parse</h5>
+                                    <p class="card-text">El combo ideal para compartir entre amigos. Tres hamburguesas 
+                                        irresistibles con sus papas y ensalada, perfecto para disfrutar en parche o familia.
+                                        Servida con papas fritas, porque lo bueno siempre es mejor acompañado.
+                                    </p><br>
+                                    <h4 class="text-danger fw-bold">$55.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Combo Parse"
+                                            data-price="55000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa4.jpg" class="card-img-top" alt="Hamburguesa Vegetariana">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa Vegetariana</h5>
-                                    <p class="card-text">Con garbanzos, vegetales frescos y salsa especial.</p>
+                                <img src="imgped/hamburger/ham_laBestia.png" class="card-img-top imagen_fija" alt="ham_laBestia">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Hamburguesa La Bestia</h5>
+                                    <p class="card-text">No es para cualquiera… dos jugosas carnes a la parrilla, bañadas 
+                                        en una lluvia de queso derretido, tocineta crujiente y vegetales frescos que 
+                                        equilibran la potencia. Servida con papas fritas, una creación monstruosa hecha 
+                                        para los que no se conforman con poco
+                                    </p>
+                                    <h4 class="text-danger fw-bold">$30.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Hamburguesa La Bestia"
+                                            data-price="30000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -169,40 +264,69 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/perro1.jpg" class="card-img-top" alt="Perro Sencillo">
-                                <div class="card-body">
-                                    <h5 class="card-title">Perro Sencillo</h5>
-                                    <p class="card-text">Pan suave, salchicha y salsa especial.</p>
+                                <img src="imgped/hot_dog/dog_elSalvaje.png" class="card-img-top imagen_fija" alt="dog_elSalvaje">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Perro Caliente El Salvaje</h5>
+                                    <p class="card-text">Un perro fuera de control: salchicha premium con crujiente cebolla,
+                                         salsa BBQ intensa y tocineta. Servido con papas fritas, es la opción perfecta para los
+                                          que buscan un sabor arrollador.</p><br>
+                                    <h4 class="text-danger fw-bold">$18.000</h4>
+                                    <button class="btn btn-dark">Agregar al carrito 🛒</button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/perro2.jpg" class="card-img-top" alt="Perro con Queso">
-                                <div class="card-body">
-                                    <h5 class="card-title">Perro con Queso</h5>
-                                    <p class="card-text">Clásico con queso fundido y tocineta.</p>
+                                <img src="imgped/hot_dog/dog_pecadoCapital.png" class="card-img-top imagen_fija" alt="dog_pecadoCapital">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Perro Caliente Pecado Capital</h5>
+                                    <p class="card-text">Un exceso de sabor que nadie puede resistir: salchicha con 
+                                        chorizo doradito, maíz tierno que aporta el toque dulce, queso fundido y cebolla 
+                                        crocante, todo bañado en salsa. Acompañado de papas fritas.</p>
+                                    <h4 class="text-danger fw-bold">$20.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Perro Caliente Pecado Capital"
+                                            data-price="20000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/perro3.jpg" class="card-img-top" alt="Perro Mexicano">
-                                <div class="card-body">
-                                    <h5 class="card-title">Perro Mexicano</h5>
-                                    <p class="card-text">Con guacamole, jalapeños y salsa picante.</p>
+                                <img src="imgped/hot_dog/dog_elDestructivo.png" class="card-img-top imagen_fija" alt="dog_elDestructivo">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Perro Caliente El Destructivo</h5>
+                                    <p class="card-text">Una bestia de sabor que arrasa con todo a su paso: chorizo jugoso
+                                         a la parrilla, salchicha picada doradita, cubiertos con queso derretido, pimientos
+                                          asados y un toque de hierbas frescas. Cada mordida es una explosión que 
+                                          conquista hasta al más valiente.</p>
+                                    <h4 class="text-danger fw-bold">$18.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Perro Caliente El Destructivo"
+                                            data-price="18000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/perro4.jpg" class="card-img-top" alt="Perro Especial">
-                                <div class="card-body">
-                                    <h5 class="card-title">Perro Especial</h5>
-                                    <p class="card-text">Doble salchicha, queso, tocineta y salsas.</p>
+                                <img src="imgped/hot_dog/dog_elCaribeño.png" class="card-img-top imagen_fija" alt="dog_elCaribeño">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Perro Caliente El Caribeño</h5>
+                                    <p class="card-text">Una explosión de sabor tropical: salchicha jugosa a la parrilla envuelta en 
+                                        maduro doradito, coronada con guacamole fresco, queso rallado y un toque crujiente que 
+                                        equilibra lo dulce y lo salado. Acompañado de papas fritas doradas y crocantes.</p>
+                                    <h4 class="text-danger fw-bold">$18.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Perro Caliente el Caribeño"
+                                            data-price="18000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -211,41 +335,75 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4 mt-0">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa1.jpg" class="card-img-top" alt="perro">
-                                <div class="card-body">                                            
-                                    <h5 class="card-title">Perro Clásica</h5>
-                                    <p class="card-text">Deliciosa hamburguesa con carne 100% de res, queso y vegetales 
-                                        frescos.</p>
+                                <img src="imgped/hot_dog/dog_elLegendario.png" class="card-img-top imagen_fija" alt="dog_todoTerreno">
+                                <div class="card-body text-center">                                            
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Perro Caliente El Legendario</h5>
+                                    <p class="card-text">El rey de los antojos callejeros: salchicha jugosa servida en pan fresco con 
+                                        una cama de repollo crujiente, coronado con papas fritas finas y doradas, bañado en la irresistible
+                                         mezcla de mayonesa y salsa de tomate. Acompañado de papas fritas.</p>
+                                    <h4 class="text-danger fw-bold">$20.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Perro Caliente El Legendario"
+                                            data-price="20000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa2.jpg" class="card-img-top" alt="Perro BBQ">
-                                <div class="card-body">
-                                    <h5 class="card-title">Perro BBQ</h5>
-                                    <p class="card-text">Con salsa barbacoa, tocineta crujiente y queso cheddar.</p>
+                                <img src="imgped/hot_dog/comb_latino.png" class="card-img-top imagen_fija" alt="comb_latino">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Combo Latino</h5>
+                                    <p class="card-text">Una fiesta de sabores en un solo combo: cinco perros calientes artesanales
+                                        , cada uno con su propio toque especial, desde los clásicos con queso y salsas, hasta
+                                         los más atrevidos con toques tropicales, maíz dulce, tocineta crocante y cebolla caramelizada.
+                                    </p>
+                                    <h4 class="text-danger fw-bold">$70.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Combo Latino"
+                                            data-price="70000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa3.jpg" class="card-img-top" alt="Perro Doble">
-                                <div class="card-body">
-                                    <h5 class="card-title">Perro Doble</h5>
-                                    <p class="card-text">Doble carne, doble queso y todo el sabor de Wicho’s.</p>
+                                <img src="imgped/hot_dog/comb_parrilleros.png" class="card-img-top imagen_fija" alt="comb_parrilleros">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Combo Parrilleros</h5>
+                                    <p class="card-text">El sabor de la parrilla con un toque irresistible: tres perros 
+                                        calientes con salchicha asada al carbón, coronados con carne molida jugosa y 
+                                        sazonada al estilo chili, queso cheddar rallado y cebolla fresca que realzan cada 
+                                        mordida. Acompañados de papas fritas doradas.
+                                    </p>
+                                    <h4 class="text-danger fw-bold">$43.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Combo Parrilleros"
+                                            data-price="43000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa4.jpg" class="card-img-top" alt="Perro Vegetariana">
-                                <div class="card-body">
-                                    <h5 class="card-title">Perro Vegetariana</h5>
-                                    <p class="card-text">Con garbanzos, vegetales frescos y salsa especial.</p>
+                                <img src="imgped/hot_dog/dog_clasico.png" class="card-img-top imagen_fija" alt="dog_clasico">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Perro Caliente Clásico</h5>
+                                    <p class="card-text">El favorito de siempre: pan suave y esponjoso que abraza una jugosa 
+                                        salchicha a la plancha, acompañado de las salsas tradicionales coronado con papitas
+                                         crujientes que le dan el toque perfecto.</p>
+                                    <h4 class="text-danger fw-bold">$16.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Perro Caliente Clásico"
+                                            data-price="16000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -257,40 +415,73 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/perro1.jpg" class="card-img-top" alt="Arepa Sencillo">
-                                <div class="card-body">
-                                    <h5 class="card-title">Arepa Sencillo</h5>
-                                    <p class="card-text">Pan suave, salchicha y salsa especial.</p>
+                                <img src="imgped/corn_cake/corn_laJefa.png" class="card-img-top imagen_fija" alt="corn_laJefa">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Arepa La Jefa</h5>
+                                    <p class="card-text">Una combinación poderosa de carne mechada, aguacate fresco, maíz 
+                                        tierno, frijoles negros y vegetales salteados, todo dentro de una arepa suave y 
+                                        doradita. El equilibrio perfecto entre tradición y abundancia.</p><br>
+                                    <h4 class="text-danger fw-bold">$10.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Arepa La Jefa"
+                                            data-price="10000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/perro2.jpg" class="card-img-top" alt="Arepa">
-                                <div class="card-body">
-                                    <h5 class="card-title">Arepa con Queso</h5>
-                                    <p class="card-text">Clásico con queso fundido y tocineta.</p>
+                                <img src="imgped/corn_cake/corn_laTocinator.png" class="card-img-top imagen_fija" alt="corn_laTocinator">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Arepa La Tocinator</h5>
+                                    <p class="card-text">Una arepa dorada y suave rellena con una lluvia generosa de tocineta
+                                         crujiente y jugosa. Cada mordisco es puro placer ahumado y adictivo, ideal para los
+                                          amantes del sabor intenso y sin medida.</p><br>
+                                    <h4 class="text-danger fw-bold">$10.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Arepa La Tocinator"
+                                            data-price="10000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/perro3.jpg" class="card-img-top" alt="Arepa Mexicano">
-                                <div class="card-body">
-                                    <h5 class="card-title">Arepa Mexicano</h5>
-                                    <p class="card-text">Con guacamole, jalapeños y salsa picante.</p>
+                                <img src="imgped/corn_cake/corn_laJugosa.png" class="card-img-top imagen_fija" alt="corn_laJugosa">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Arepa La Jugosa</h5>
+                                    <p class="card-text">Arepa asada al punto, rellena con abundante carne mechada jugosa y
+                                         bañada en su propio guiso casero. Un clásico lleno de fuerza y tradición que conquista
+                                          desde el primer mordisco.</p><br>
+                                    <h4 class="text-danger fw-bold">$9.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Arepa La Jugosa"
+                                            data-price="9000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/perro4.jpg" class="card-img-top" alt="Arepa Especial">
-                                <div class="card-body">
-                                    <h5 class="card-title">Arepa Especial</h5>
-                                    <p class="card-text">Doble salchicha, queso, tocineta y salsas.</p>
+                                <img src="imgped/corn_cake/corn_laDemencia.png" class="card-img-top imagen_fija" alt="corn_laDemencia">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Arepa La Demencia</h5>
+                                    <p class="card-text">Una arepa doradita que no conoce límites: se desborda con pernil,
+                                         chorizo, chicharrón, carne mechada y queso derretido. Una locura de sabores, texturas
+                                          y placer que desafía la cordura. Para los que comen sin miedo y con ganas de romper 
+                                          la dieta con estilo.</p>
+                                    <h4 class="text-danger fw-bold">$10.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Arepa La Demencia"
+                                            data-price="10000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -299,76 +490,161 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4 mt-0">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa1.jpg" class="card-img-top" alt="AREPA Clásica">
-                                <div class="card-body">                                            
-                                    <h5 class="card-title">arepa Clásica</h5>
-                                    <p class="card-text">Deliciosa hamburguesa con carne 100% de res, queso y vegetales frescos.</p>
+                                <img src="imgped/corn_cake/corn_laPecadora.png" class="card-img-top imagen_fija" alt="corn_laPecadora">
+                                <div class="card-body text-center">                                            
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Arepa La Pecadora</h5>
+                                    <p class="card-text">El dulzor atrevido del plátano maduro se junta con queso fundido y
+                                         tocineta crujiente en una combinación tan sabrosa que parece un pecado. Cada mordisco
+                                          es una tentación irresistible que te hace perder el control y repetir.</p><br>
+                                    <h4 class="text-danger fw-bold">$8.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Arepa La Pecadora"
+                                            data-price="8000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa2.jpg" class="card-img-top" alt="arepa BBQ">
-                                <div class="card-body">
-                                    <h5 class="card-title">arepa BBQ</h5>
-                                    <p class="card-text">Con salsa barbacoa, tocineta crujiente y queso cheddar.</p>
+                                <img src="imgped/corn_cake/corn_laPollera.png" class="card-img-top imagen_fija" alt="corn_laPollera">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Arepa La Pollera</h5>
+                                    <p class="card-text">Una arepa con alma criolla: rellena hasta el tope con pollo mechado
+                                         jugoso, guisado lentamente en sofrito y especias que despiertan la nostalgia del sabor
+                                          casero.</p><br>
+                                          <h4 class="text-danger fw-bold">$8.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Arepa La Pollera"
+                                            data-price="8000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa3.jpg" class="card-img-top" alt="arepa Doble">
-                                <div class="card-body">
-                                    <h5 class="card-title">arepa Doble</h5>
-                                    <p class="card-text">Doble carne, doble queso y todo el sabor de Wicho’s.</p>
+                                <img src="imgped/corn_cake/comb_dobleCara.png" class="card-img-top imagen_fija" alt="comb_dobleCara">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Combo Doble Cara</h5>
+                                    <p class="card-text">Dos arepas, dos sabores que se complementan. Una suave y clara con
+                                         pollo desmechado en sofrito casero; la otra, intensa y oscura, con carne mechada 
+                                         sazonada al estilo criollo. Un contraste de sabores que se equilibran en cada mordisco.
+                                    </p>
+                                    <h4 class="text-danger fw-bold">$14.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Combo Doble Cara"
+                                            data-price="14000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/hamburguesa4.jpg" class="card-img-top" alt="arepa Vegetariana">
-                                <div class="card-body">
-                                    <h5 class="card-title">arepa Vegetariana</h5>
-                                    <p class="card-text">Con garbanzos, vegetales frescos y salsa especial.</p>
+                                <img src="imgped/corn_cake/corn_laFogonera.png" class="card-img-top imagen_fija" alt="corn_laFogonera">
+                                <div class="card-body text-center">
+                                    <h5 class="card-titlecard-title fw-bold text-dark">Arepa La Fogonera</h5>
+                                    <p class="card-text">Un banquete ardiente de sabor: carne mechada cocida a fuego lento,
+                                         bañada con guasaca fresca y un toque de picante ahumado. Coronada con queso rallado
+                                          que se derrite suavemente sobre la arepa dorada. Puro fogón criollo hecho tradición.
+                                    </p>
+                                    <h4 class="text-danger fw-bold">$8.000</h4>
+                                    <button <button class="btn btn-dark"
+                                            data-name="Arepa La Fogonera"
+                                            data-price="8000">
+                                        <i class="bi bi-cart"></i> Agregar al carrito
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> 
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas">
+                    <div class="offcanvas-header border-bottom">
+                        <h5 class="fw-bold">
+                            <i class="bi bi-cart3 text-success me-2"></i> Carrito de Compras
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="list-group mb-3 shadow-sm">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>Hamburguesa La Bestia</div>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="fw-semibold">$30.000</span>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>Perro Caliente El Caribeño</div>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="fw-semibold">$18.000</span>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>Arepa La Pollera</div>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="fw-semibold">$8.000</span>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-between border-top pt-3 mb-3">
+                        <strong>Total:</strong>
+                        <strong class="text-success">$56.000</strong>
+                    </div>
+                    <button class="btn btn-success w-100 shadow-sm">
+                        <i class="bi bi-bag-check me-2"></i> Finalizar compra
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
+
     
 
-
-
-
 </main>
-<footer class="text-bg-dark text-center p-5">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <h5>Nuestra Ubicación</h5>
-                San Alonso
-            </div><br>
-            <div class="col">
-                <h5>Redes Sociales</h5>
-                Facebook
-            </div><br>
-            <div class="col">
-                <h5>Horarios de atención</h5>
-                Lunes a sábado: <br>
-                05:00 pm - 10:00 pm <br> <br>
-                domingos y festivos: <br>
-                04:00 pm - 08:00 pm
-            </div><br>
-        </div>
-    </div><br>
-<h6>Copyright © 2025 Wicho's</h6>
+<footer class="text-bg-dark text-center py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <h5 class="text-warning fw-bold">Nuestra Ubicación</h5>
+        <p><i class="bi bi-geo-alt-fill text-warning"></i>San Alonso</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <h5 class="text-warning fw-bold">Redes Sociales</h5>
+        <p class="social-icons">
+            <a href="#" class="text-warning"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-warning"><i class="bi bi-instagram"></i></a>
+        </p>
+    </div>
+      <div class="col-md-4">
+        <h5 class="text-warning fw-bold">Horarios de atención</h5>
+        <p>
+          Lunes a sábado: 5:00 pm - 10:00 pm<br>
+          Domingos y festivos: 4:00 pm - 8:00 pm
+        </p>
+      </div>
+    </div>
+    <hr class="border-light">
+    <p class="mb-0">&copy; 2025 Wicho's</p>
+  </div>
 </footer>
+
 
 
 
@@ -383,3 +659,5 @@ crossorigin="anonymous"></script>
     
 </body>
 </html>
+
+    
