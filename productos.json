@@ -1,0 +1,176 @@
+{
+  "hamburguesas": [
+    {
+      "nombre": "Hamburguesa La Rebelde",
+      "id": "h001",
+      "descripcion": "Una hamburguesa con personalidad: carne jugosa de res, queso cheddar derretido, crocante de cebolla, pepinillos y lechuga fresca en pan brioche dorado. Servida con papas fritas, una combinación perfecta entre suavidad, sabor ahumado y un toque crujiente.",
+      "precio": 24000,
+      "imgURL": "imgped/hamburger/ham_laRebelde.png"
+    },
+    {
+      "nombre": "Hamburguesa La Explosiva",
+      "id": "h002",
+      "descripcion": "La reina de la intensidad: carne jugosa de res, doble pollo crujiente, doble queso derretido y un estallido de salsas que se mezclan con vegetales frescos en un pan brioche con ajonjolí. Servida con papas fritas, es una bomba de sabor.",
+      "precio": 28000,
+      "imgURL": "imgped/hamburger/ham_laExplosiva.png"
+    },
+    {
+      "nombre": "Hamburguesa La Crispy",
+      "id": "h003",
+      "descripcion": "El sabor único del pollo crujiente se roba el show: capas de pollo empanizado dorado, queso cheddar fundido, vegetales frescos y salsas irresistibles, todo dentro de un pan ajonjolí suave. Acompañada de papas fritas, una combinación perfecta de frescura.",
+      "precio": 20000,
+      "imgURL": "imgped/hamburger/ham_laCrispy.png"
+    },
+    {
+      "nombre": "Hamburguesa La Rustica",
+      "id": "h004",
+      "descripcion": "Un viaje al sabor ahumado: carne jugosa a la parrilla con salsa BBQ, tocineta crujiente y cebolla caramelizada sobre una cama de verdes frescos, en pan brioche con ajonjolí. Acompañada de papas fritas, es una hamburguesa rústica, potente y llena de carácter.",
+      "precio": 26000,
+      "imgURL": "imgped/hamburger/ham_laRustica.png"
+    },
+    {
+      "nombre": "Hamburguesa Intensidad",
+      "id": "h005",
+      "descripcion": "Una hamburguesa diseñada para los que no se conforman con poco. Dos carnes jugosas de res, doble queso cheddar, jamón ahumado y vegetales frescos en pan brioche con ajonjolí. Servida con papas fritas para un combo explosivo de sabor y abundancia.",
+      "precio": 28000,
+      "imgURL": "imgped/hamburger/ham_intensa.png"
+    },
+    {
+      "nombre": "Hamburguesa La Clasica",
+      "id": "h006",
+      "descripcion": "La hamburguesa de siempre, con el sabor que nunca pasa de moda: carne jugosa de res, queso derretido y vegetales frescos en pan con ajonjolí. Acompañada con papas fritas para disfrutar de un clásico irresistible.",
+      "precio": 18000,
+      "imgURL": "imgped/hamburger/ham_laClasica.png"
+    },
+    {
+      "nombre": "Combo Parse",
+      "id": "h007",
+      "descripcion": "El combo ideal para compartir entre amigos. Tres hamburguesas irresistibles con sus papas y ensalada, perfecto para disfrutar en parche o familia. Servida con papas fritas, porque lo bueno siempre es mejor acompañado.",
+      "precio": 55000,
+      "imgURL": "imgped/hamburger/comb_parse.png"
+    },
+    {
+      "nombre": "Hamburguesa La Bestia",
+      "id": "h008",
+      "descripcion": "No es para cualquiera… dos jugosas carnes a la parrilla, bañadas en una lluvia de queso derretido, tocineta crujiente y vegetales frescos que equilibran la potencia. Servida con papas fritas, una creación monstruosa hecha para los que no se conforman con poco.",
+      "precio": 30000,
+      "imgURL": "imgped/hamburger/ham_laBestia.png"
+    }
+  ],
+  "perrosCalientes": [
+    {
+      "nombre": "Perro Caliente El Salvaje",
+      "id": "p001",
+      "descripcion": "Un perro fuera de control: salchicha premium con crujiente cebolla, salsa BBQ intensa y tocineta. Servido con papas fritas, es la opción perfecta para los que buscan un sabor arrollador.",
+      "precio": 18000,
+      "imgURL": "imgped/hot_dog/dog_elSalvaje.png"
+    },
+    {
+      "nombre": "Perro Caliente Pecado Capital",
+      "id": "p002",
+      "descripcion": "Un exceso de sabor que nadie puede resistir: salchicha con chorizo doradito, maíz tierno que aporta el toque dulce, queso fundido y cebolla crocante, todo bañado en salsa. Acompañado de papas fritas.",
+      "precio": 20000,
+      "imgURL": "imgped/hot_dog/dog_pecadoCapital.png"
+    },
+    {
+      "nombre": "Perro Caliente El Destructivo",
+      "id": "p003",
+      "descripcion": "Una bestia de sabor que arrasa con todo a su paso: chorizo jugoso a la parrilla, salchicha picada doradita, cubiertos con queso derretido, pimientos asados y un toque de hierbas frescas. Cada mordida es una explosión que conquista hasta al más valiente.",
+      "precio": 18000,
+      "imgURL": "imgped/hot_dog/dog_elDestructivo.png"
+    },
+    {
+      "nombre": "Perro Caliente El Caribeño",
+      "id": "p004",
+      "descripcion": "Una explosión de sabor tropical: salchicha jugosa a la parrilla envuelta en maduro doradito, coronada con guacamole fresco, queso rallado y un toque crujiente que equilibra lo dulce y lo salado. Acompañado de papas fritas doradas y crocantes.",
+      "precio": 18000,
+      "imgURL": "imgped/hot_dog/dog_elCaribeño.png"
+    },
+    {
+      "nombre": "Perro Caliente El Legendario",
+      "id": "p005",
+      "descripcion": "El rey de los antojos callejeros: salchicha jugosa servida en pan fresco con una cama de repollo crujiente, coronado con papas fritas finas y doradas, bañado en la irresistible mezcla de mayonesa y salsa de tomate. Acompañado de papas fritas.",
+      "precio": 20000,
+      "imgURL": "imgped/hot_dog/dog_elLegendario.png"
+    },
+    {
+      "nombre": "Combo Latino",
+      "id": "p006",
+      "descripcion": "Una fiesta de sabores en un solo combo: cinco perros calientes artesanales, cada uno con su propio toque especial, desde los clásicos con queso y salsas, hasta los más atrevidos con toques tropicales, maíz dulce, tocineta crocante y cebolla caramelizada.",
+      "precio": 70000,
+      "imgURL": "imgped/hot_dog/comb_latino.png"
+    },
+    {
+      "nombre": "Combo Parrilleros",
+      "id": "p007",
+      "descripcion": "El sabor de la parrilla con un toque irresistible: tres perros calientes con salchicha asada al carbón, coronados con carne molida jugosa y sazonada al estilo chili, queso cheddar rallado y cebolla fresca que realzan cada mordida. Acompañados de papas fritas doradas.",
+      "precio": 43000,
+      "imgURL": "imgped/hot_dog/comb_parrilleros.png"
+    },
+    {
+      "nombre": "Perro Caliente Clásico",
+      "id": "p008",
+      "descripcion": "El favorito de siempre: pan suave y esponjoso que abraza una jugosa salchicha a la plancha, acompañado de las salsas tradicionales, coronado con papitas crujientes que le dan el toque perfecto.",
+      "precio": 16000,
+      "imgURL": "imgped/hot_dog/dog_clasico.png"
+    }
+  ],
+  "arepas": [
+    {
+      "nombre": "Arepa La Jefa",
+      "id": "a001",
+      "descripcion": "Una combinación poderosa de carne mechada, aguacate fresco, maíz tierno, frijoles negros y vegetales salteados, todo dentro de una arepa suave y doradita. El equilibrio perfecto entre tradición y abundancia.",
+      "precio": 10000,
+      "imgURL": "imgped/corn_cake/corn_laJefa.png"
+    },
+    {
+      "nombre": "Arepa La Tocinator",
+      "id": "a002",
+      "descripcion": "Una arepa dorada y suave rellena con una lluvia generosa de tocineta crujiente y jugosa. Cada mordisco es puro placer ahumado y adictivo, ideal para los amantes del sabor intenso y sin medida.",
+      "precio": 10000,
+      "imgURL": "imgped/corn_cake/corn_laTocinator.png"
+    },
+    {
+      "nombre": "Arepa La Jugosa",
+      "id": "a003",
+      "descripcion": "Arepa asada al punto, rellena con abundante carne mechada jugosa y bañada en su propio guiso casero. Un clásico lleno de fuerza y tradición que conquista desde el primer mordisco.",
+      "precio": 9000,
+      "imgURL": "imgped/corn_cake/corn_laJugosa.png"
+    },
+    {
+      "nombre": "Arepa La Demencia",
+      "id": "a004",
+      "descripcion": "Una arepa doradita que no conoce límites: se desborda con pernil, chorizo, chicharrón, carne mechada y queso derretido. Una locura de sabores, texturas y placer que desafía la cordura. Para los que comen sin miedo y con ganas de romper la dieta con estilo.",
+      "precio": 10000,
+      "imgURL": "imgped/corn_cake/corn_laDemencia.png"
+    },
+    {
+      "nombre": "Arepa La Pecadora",
+      "id": "a005",
+      "descripcion": "El dulzor atrevido del plátano maduro se junta con queso fundido y tocineta crujiente en una combinación tan sabrosa que parece un pecado. Cada mordisco es una tentación irresistible que te hace perder el control y repetir.",
+      "precio": 8000,
+      "imgURL": "imgped/corn_cake/corn_laPecadora.png"
+    },
+    {
+      "nombre": "Arepa La Pollera",
+      "id": "a006",
+      "descripcion": "Una arepa con alma criolla: rellena hasta el tope con pollo mechado jugoso, guisado lentamente en sofrito y especias que despiertan la nostalgia del sabor casero.",
+      "precio": 8000,
+      "imgURL": "imgped/corn_cake/corn_laPollera.png"
+    },
+    {
+      "nombre": "Combo Doble Cara",
+      "id": "a007",
+      "descripcion": "Dos arepas, dos sabores que se complementan. Una suave y clara con pollo desmechado en sofrito casero; la otra, intensa y oscura, con carne mechada sazonada al estilo criollo. Un contraste de sabores que se equilibran en cada mordisco.",
+      "precio": 14000,
+      "imgURL": "imgped/corn_cake/comb_dobleCara.png"
+    },
+    {
+      "nombre": "Arepa La Fogonera",
+      "id": "a008",
+      "descripcion": "Un banquete ardiente de sabor: carne mechada cocida a fuego lento, bañada con guasaca fresca y un toque de picante ahumado. Coronada con queso rallado que se derrite suavemente sobre la arepa dorada. Puro fogón criollo hecho tradición.",
+      "precio": 8000,
+      "imgURL": "imgped/corn_cake/corn_laFogonera.png"
+    }
+  ]
+}
