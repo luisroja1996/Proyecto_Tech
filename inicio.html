@@ -4,314 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio | Wicho's</title>
+
   <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-    crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="imglogo/logo2.png" type="image/png">
-
+  <link rel="icon" type="image/png" href="imglogo/logo2.png">
 </head>
-<body>
 
+<body>
 <header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary p-4" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-                    <a href="inicio.html">
-                    <img src="imglogo/logo1.png" alt="WICHO'S Logo" width="200" height="150" class="me-2" href="inicio.html">
-                    </a>
-                    <span></span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-cart-fill"></i>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+      <a class="navbar-brand d-flex align-items-center" href="inicio.html">
+        <img src="imglogo/logo1.png" alt="Wicho's Logo" width="200" height="150" class="me-2">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav w-30">
-          <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
-          </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-          </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pedidos.html">Menú</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="registro.html">Registro</a>
-          </li>
-
-          <li class="nav-item">
-            <button class="btn btn-outline-warning d-flex align-items-center gap-2 white-space-nowrap" type="button" 
-          data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas" style="white-space: nowrap;">
-              <i class="bi bi-cart-fill"></i> Carrito de Compras
-              <span class="badge bg-danger carrito-badge">3</span>
-            </button>
-          </li>
+            <form class="d-flex ms-lg-3 my-3 my-lg-0" role="search" id="form-busqueda">
+                            <input class="form-control me-2" type="search" placeholder="Buscar productos..."
+                             aria-label="Buscar" id="input-buscar">
+                            <button class="btn btn-outline-warning" type="submit">
+                                 <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+          <li class="nav-item"><a class="nav-link active" href="inicio.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="pedidos.html">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
         </ul>
       </div>
+
+      <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas">
+        <i class="bi bi-cart-fill"></i> Carrito <span class="badge bg-danger carrito-badge">0</span>
+      </button>
     </div>
   </nav>
-   <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas">
-                    <div class="offcanvas-header border-bottom">
-                        <h5 class="fw-bold">
-                            <i class="bi bi-cart3 text-success me-2"></i> Carrito de Compras
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="list-group mb-3 shadow-sm">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <div>Hamburguesa La Bestia</div>
-                            <div class="d-flex align-items-center gap-2">
-                                <span class="fw-semibold">$30.000</span>
-                                <button class="btn btn-sm btn-outline-danger">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </div>
-                        </li>
 
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <div>Perro Caliente El Caribeño</div>
-                            <div class="d-flex align-items-center gap-2">
-                                <span class="fw-semibold">$18.000</span>
-                                <button class="btn btn-sm btn-outline-danger">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </div>
-                        </li>
-
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <div>Arepa La Pollera</div>
-                            <div class="d-flex align-items-center gap-2">
-                                <span class="fw-semibold">$8.000</span>
-                                <button class="btn btn-sm btn-outline-danger">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="d-flex justify-content-between border-top pt-3 mb-3">
-                        <strong>Total:</strong>
-                        <strong class="text-success">$56.000</strong>
-                    </div>
-                    <button class="btn btn-success w-100 shadow-sm">
-                        <i class="bi bi-bag-check me-2"></i> Finalizar compra
-                    </button>
-                </div>
-            </div>
-        </div>
+  <!-- Carrito -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="fw-bold"><i class="bi bi-cart3 text-success me-2"></i>Carrito de Compras</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
     </div>
+    <div class="offcanvas-body">
+      <ul class="list-group mb-3 shadow-sm" id="lista-carrito"></ul>
+      <div class="d-flex justify-content-between border-top pt-3 mb-3">
+        <strong>Total:</strong>
+        <strong class="text-success" id="total-carrito">$0</strong>
+      </div>
+      <button class="btn btn-success w-100 shadow-sm">
+        <i class="bi bi-bag-check me-2"></i> Finalizar compra
+      </button>
+    </div>
+  </div>
 </header>
 
+<main class="py-5">
+   <section class="container mt-4 d-none" id="bloque-busqueda">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="mb-0">Resultados de búsqueda</h4>
+    <small class="text-muted" id="resumen-busqueda"></small>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 g-4" id="grid-busqueda"></div>
+</section> 
+  <div class="container">
+    <div class="border border-5 rounded border-dark p-3 mb-5 text-center">
+      <h4>Nuestros clientes ya tienen sus favoritos... y tú también puedes tener el tuyo.<br>
+      Conoce nuestras recomendaciones de la casa y prepárate para disfrutar.</h4>
+    </div>
 
-  <main class="py-5">
-    <div class="container">
-      <div class="border border-5 rounded border-dark p-3 mb-5 text-center">
-        <h4 class="text-center">Nuestros clientes ya tienen sus favoritos... y tú también puedes tener el tuyo. <br>
-        Conoce nuestras recomendaciones de la casa y prepárate para disfrutar.
-        </h4><br><br>
-
-
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="imagenes/ham_laRebelde.png" class="card-img-top imagen_fija" alt="ham_laRebelde">
-                                <div class="card-body text-center">                                            
-                                    <h5 class="card-title fw-bold text-dark">Hamburguesa La Rebelde</h5>
-                                    <p class="card-text">Una hamburguesa con personalidad: carne jugosa de res, queso 
-                                        cheddar derretido, crocante de cebolla, pepinillos y lechuga fresca en pan brioche
-                                         dorado. Servida con papas fritas,  una combinación perfecta entre suavidad, sabor
-                                          ahumado y un toque crujiente.
-                                    </p>
-                                    <h4 class="text-danger fw-bold">$24.000</h4>
-                                    <button class="btn btn-dark"
-                                            data-name="Hamburguesa La Rebelde"
-                                            data-price="24000">
-                                        <i class="bi bi-cart"></i> Agregar al carrito
-                                    </button>
-                                    
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="imagenes/ham_laExplosiva.png" class="card-img-top imagen_fija" alt="ham_laExplosiva">
-                                <div class="card-body text-center">
-                                    <h5 class="card-titlecard-title fw-bold text-dark">Hamburguesa La Explosiva</h5>
-                                    <p class="card-text">La reina de la intensidad: carne jugosa de res, doble pollo 
-                                        crujiente, doble queso derretido y un estallido de salsas que se mezclan con 
-                                        vegetales frescos en un pan brioche con ajonjolí. Servida con papas fritas, es una 
-                                        bomba de sabor.</p><br>
-                                    <h4 class="text-danger fw-bold">$28.000</h4>
-                                    <button class="btn btn-dark"
-                                            data-name="Hamburguesa La Explosiva"
-                                            data-price="28000">
-                                        <i class="bi bi-cart"></i> Agregar al carrito
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="imagenes/ham_laRustica.png" class="card-img-top imagen_fija" alt="ham_laRustica">
-                                <div class="card-body text-center">
-                                    <h5 class="card-titlecard-title fw-bold text-dark">Hamburguesa La Rustica</h5>
-                                    <p class="card-text">Un viaje al sabor ahumado: carne jugosa a la parrilla con salsa BBQ, 
-                                        tocineta crujiente y cebolla caramelizada sobre una cama de verdes frescos, en pan 
-                                        brioche con ajonjolí. Acompañada de papas fritas, es una hamburguesa rústica, potente
-                                         y llena de carácter.
-                                    </p>
-                                    <h4 class="text-danger fw-bold">$26.000</h4>
-                                    <button class="btn btn-dark"
-                                            data-name="Hamburguesa La Rustica"
-                                            data-price="26000">
-                                        <i class="bi bi-cart"></i> Agregar al carrito
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="imagenes/dog_pecadoCapital.png" class="card-img-top imagen_fija" alt="dog_pecadoCapital">
-                                <div class="card-body text-center">
-                                    <h5 class="card-titlecard-title fw-bold text-dark">Perro Caliente Pecado Capital</h5>
-                                    <p class="card-text">Un exceso de sabor que nadie puede resistir: salchicha con 
-                                        chorizo doradito, maíz tierno que aporta el toque dulce, queso fundido y cebolla 
-                                        crocante, todo bañado en salsa. Acompañado de papas fritas.
-                                    </p>
-                                    <h4 class="text-danger fw-bold">$20.000</h4>
-                                    <button class="btn btn-dark"
-                                            data-name="Perro Caliente Pecado Capital"
-                                            data-price="20000">
-                                        <i class="bi bi-cart"></i> Agregar al carrito
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="row row-cols-1 row-cols-md-2 g-4 mt-0">
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="imagenes/dog_elCaribeño.png" class="card-img-top imagen_fija" alt="dog_elCaribeño">
-                                <div class="card-body text-center">                                            
-                                    <h5 class="card-titlecard-title fw-bold text-dark">Perro Caliente El Caribeño</h5>
-                                    <p class="card-text">Una explosión de sabor tropical: salchicha jugosa a la parrilla envuelta en 
-                                        maduro doradito, coronada con guacamole fresco, queso rallado y un toque crujiente que 
-                                        equilibra lo dulce y lo salado. Acompañado de papas fritas doradas y crocantes.
-                                    </p>
-                                    <h4 class="text-danger fw-bold">$18.000</h4>
-                                    <button class="btn btn-dark"
-                                            data-name="Perro Caliente El Caribeño"
-                                            data-price="18000">
-                                        <i class="bi bi-cart"></i> Agregar al carrito
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="imagenes/dog_elLegendario.png" class="card-img-top imagen_fija" alt="dog_elLegendario">
-                                <div class="card-body text-center">
-                                    <h5 class="card-titlecard-title fw-bold text-dark">Perro Caliente El Legendario</h5>
-                                    <p class="card-text">El rey de los antojos callejeros: salchicha jugosa servida en pan fresco con 
-                                        una cama de repollo crujiente, coronado con papas fritas finas y doradas, bañado en la irresistible
-                                         mezcla de mayonesa y salsa de tomate. Acompañado de papas fritas.
-                                    </p><br>
-                                    <h4 class="text-danger fw-bold">$20.000</h4>
-                                    <button class="btn btn-dark"
-                                            data-name="Perro Caliente El Legendario"
-                                            data-price="20000">
-                                        <i class="bi bi-cart"></i> Agregar al carrito
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="imagenes/corn_laJefa.png" class="card-img-top imagen_fija" alt="corn_laJefa">
-                                <div class="card-body text-center">
-                                    <h5 class="card-titlecard-title fw-bold text-dark">Arepa La Jefa</h5>
-                                    <p class="card-text">Una combinación poderosa de carne mechada, aguacate fresco, maíz 
-                                        tierno, frijoles negros y vegetales salteados, todo dentro de una arepa suave y 
-                                        doradita. El equilibrio perfecto entre tradición y abundancia.
-                                    </p><br>
-                                    <h4 class="text-danger fw-bold">$10.000</h4>
-                                    <button class="btn btn-dark"
-                                            data-name="Arepa La Jefa"
-                                            data-price="10000">
-                                        <i class="bi bi-cart"></i> Agregar al carrito
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="imagenes/corn_laPollera.png" class="card-img-top imagen_fija" alt="corn_laPollera">
-                                <div class="card-body text-center">
-                                    <h5 class="card-titlecard-title fw-bold text-dark">Arepa La Pollera</h5>
-                                    <p class="card-text">El dulzor atrevido del plátano maduro se junta con queso fundido y
-                                         tocineta crujiente en una combinación tan sabrosa que parece un pecado. Cada mordisco
-                                          es una tentación irresistible que te hace perder el control y repetir.
-                                    </p>
-                                    <h4 class="text-danger fw-bold">$8.000</h4>
-                                    <button class="btn btn-dark"
-                                            data-name="Arepa La Pollera"
-                                            data-price="8000">
-                                        <i class="bi bi-cart"></i> Agregar al carrito
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-      </div>            
-  </main>
+    <!-- Recomendados -->
+    <div class="row row-cols-1 row-cols-md-2 g-4" id="grid-recomendados">
+      <!-- Aquí se insertan dinámicamente los productos recomendados -->
+    </div>
+  </div>
+</main>
 
 <footer class="text-bg-dark text-center py-5">
   <div class="container">
     <div class="row gy-4">
       <div class="col-md-4">
         <h5 class="text-warning fw-bold">Nuestra Ubicación</h5>
-        <p><i class="bi bi-geo-alt-fill text-warning"></i>San Alonso</p>
+        <p><i class="bi bi-geo-alt-fill text-warning"></i> San Alonso</p>
       </div>
-      <div class="col-md-4 text-center">
+      <div class="col-md-4">
         <h5 class="text-warning fw-bold">Redes Sociales</h5>
-        <p class="social-icons">
-            <a href="#" class="text-warning"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-warning"><i class="bi bi-instagram"></i></a>
+        <p>
+          <a href="#" class="text-warning"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-warning"><i class="bi bi-instagram"></i></a>
         </p>
-    </div>
+      </div>
       <div class="col-md-4">
         <h5 class="text-warning fw-bold">Horarios de atención</h5>
-        <p>
-          Lunes a sábado: 5:00 pm - 10:00 pm<br>
-          Domingos y festivos: 4:00 pm - 8:00 pm
-        </p>
+        <p>Lunes a sábado: 5:00 pm - 10:00 pm<br>Domingos y festivos: 4:00 pm - 8:00 pm</p>
       </div>
     </div>
     <hr class="border-light">
-    <p class="mb-0">&copy; 2025 Wicho's <br></p>
-    <p>Derechos reservados Sandra Carvajal, Santiago Florez, Luis Rodriguez, Sebastian Ceballos</p>
+    <p class="mb-0">&copy; 2025 Wicho's</p>
+    <p>Desarrolladores: Sandra Carvajal, Santiago Flórez, Luis Rodríguez, Sebastián Ceballos</p>
   </div>
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="buscador.js" defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="inicio.js" defer></script>
 </body>
 </html>
-
-
