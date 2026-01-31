@@ -29,3 +29,38 @@ El sitio presenta los productos de un negocio de comidas rápidas de manera visu
 
 ---
 
+## ✨ Funcionalidades
+
+- Visualización del menú de comidas rápidas  
+- Sección de combos y promociones  
+- Carga dinámica de productos desde archivos JSON  
+- Diseño responsive para diferentes dispositivos  
+- Uso de componentes Bootstrap  
+- Navegación clara e intuitiva  
+
+---
+
+## 🎯 Objetivo del Proyecto
+
+- Aplicar conocimientos en **HTML, Bootstrap y JavaScript**  
+- Practicar el uso de **JSON** para datos dinámicos  
+- Fortalecer el trabajo colaborativo con **GitHub**  
+- Simular un entorno de desarrollo en equipo  
+
+---
+
+## 📍 Metodología de Trabajo
+
+- Desarrollo colaborativo utilizando **ramas en GitHub**  
+- Integración de cambios mediante **merge**  
+- Revisión y organización del código en equipo  
+
+---
+
+## 👥 Equipo de Desarrollo
+
+- **Sandra Carvajal**  
+- **Luis Rodriguez**  
+- **Santiago Florez**  
+- **Sebastian Ceballos**
+
